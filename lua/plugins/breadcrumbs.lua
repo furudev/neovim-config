@@ -4,14 +4,13 @@ return {
 	version = "*",
 	dependencies = {
 		"SmiteshP/nvim-navic",
-		"nvim-tree/nvim-web-devicons", -- optional dependency
+		"nvim-tree/nvim-web-devicons",
 	},
-	opts = {
-		-- configurations go here
-	},
+	opts = {},
 	config = function()
 		require("barbecue").setup({
 			create_autocmd = false,
+      theme = 'tokyonight'
 		})
 
 		vim.api.nvim_create_autocmd({
